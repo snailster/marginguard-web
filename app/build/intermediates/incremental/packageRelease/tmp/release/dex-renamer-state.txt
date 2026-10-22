@@ -1,0 +1,4 @@
+#Mon Oct 12 01:52:23 EDT 2026
+base.0=C\:\\Users\\greg\\marginguard-web\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

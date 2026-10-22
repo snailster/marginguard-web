@@ -1,0 +1,21 @@
+# Build & dependencies
+node_modules/
+.next/
+.vercel/
+
+# Environment files
+.env*.local
+.env
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Stray scratch files
+b64.txt
+fix.js
+npm
+npx
+powershell

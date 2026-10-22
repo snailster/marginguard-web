@@ -1,0 +1,16 @@
+{
+  "name": "MarginGuard",
+  "short_name": "MarginGuard",
+  "description": "Site Variation and Profit Protector for Contractors",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F12",
+  "theme_color": "#0B0F12",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

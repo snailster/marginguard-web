@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vercel.marginguard_web_kappa.twa",
+      "sha256_cert_fingerprints": [
+        "26:10:97:54:A7:17:D3:3C:6A:2E:5C:19:57:7F:7A:87:28:E2:CD:7A:14:6A:9E:0A:47:D6:BB:98:F3:5D:EF:0A"
+      ]
+    }
+  }
+]
