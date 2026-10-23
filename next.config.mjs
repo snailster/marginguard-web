@@ -1,7 +1,9 @@
-/** @type {import('next').NextConfig} */
+/** @type {import('next').NextType} */
 const nextConfig = {
-  output: 'export', // Produces an 'out' folder for iOS/Android builds
-  images: { unoptimized: true },
+  // REMOVE OR COMMENT OUT THIS LINE:
+  // output: 'export', 
+  
+  // Keep your other configurations here...
 };
 
-export default nextConfig;
+module.exports = nextConfig;
