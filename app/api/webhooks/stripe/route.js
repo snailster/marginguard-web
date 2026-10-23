@@ -2,13 +2,15 @@ import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { createClient } from '@supabase/supabase-js';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+export const dynamic = 'force-dynamic';
 
-// Server-side Supabase client initialization
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '');
+
+// Server-side Supabase client initialization with build-time fallbacks
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder';
+
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function POST(req) {
   const body = await req.text();
